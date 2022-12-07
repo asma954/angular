@@ -1,0 +1,32 @@
+
+<form>
+    <div class="form-group">
+        <label for="exampleInputNom">nom</label>
+        <input type="string" class="form-control" id="exampleInputNom1" placeholder="nom" i=ngModel required>
+      </div>
+    <div class="form-group">
+      <label for="exampleFormControlInput1">Email address</label>
+      <input type="string" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" ngModel required
+      ngModel="^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,3}$">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputNom">type de carte</label>
+        <input type="string" class="form-control" id="exampleInputNom1" placeholder="type de carte" ngModel required
+        ngModel minlength="16">
+      </div>
+      <div class="form-group">
+        <label for="exampleInput">numero de carte</label>
+        <input type="number" class="form-control" id="exampleInput" placeholder="numero de carte" ngModel required>
+      </div>
+      <div class="form-group">
+        <label for="exampleInput">date expiration</label>
+        <input type="string" class="form-control" id="exampleInput" placeholder="date expiration">
+      </div>
+      <div class="form-group">
+        <label for="exampleInput">code</label>
+        <input type="number" class="form-control" id="exampleInput" placeholder="code">
+      </div>
+
+      <button type="submit" class="btn btn-primary">Ajouter</button>
+</form>
+
