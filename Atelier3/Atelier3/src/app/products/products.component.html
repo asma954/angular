@@ -1,0 +1,19 @@
+<p>products works!</p>
+<div>
+    Chercher par prix : 
+    <input type="search" [(ngModel)]="prix" />
+</div>
+<div>
+    <button class="btn btn-success" (click)="addProduct()"> Ajouter Produit</button>
+</div>
+<div *ngFor="let p of productList; let i = index">
+   <app-product-item  [productItem]="p" [prix]="p.price" ></app-product-item>
+
+<div>
+    <button class="primary" (click)="routage()">Go to Articles</button>
+</div>
+
+</div>
+
+
+
